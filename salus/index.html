@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Teplota Salus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/chart.js/Chart.min.css">
+    <script src="/chart.js/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@0.1.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@0.7.7"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.js"></script>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .links a {
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .links a.selected {
+            color: #3e95cd;
+        }
+    </style>
+
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+
+<body>
+    <div>
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+    <div style="margin-top:20px;" class="links">
+        <a href="#24">24 hours</a>
+        <a href="#today">Today</a>
+        <a href="#week">Week</a>
+        <a href="#month">Month</a>
+        <a href="#all">All</a>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>
