@@ -7,7 +7,7 @@ setInterval(main, 1000 * 60 * 5); // reload data every 5 min
 window.addEventListener("hashchange", main);
 
 async function main() {
-    let data = await (await fetch(`./data.json?cacheBust=${+(new Date())}`)).json();
+    let data = jsonpack.unpack(await (await fetch(`./data.json?cacheBust=${+(new Date())}`)).text());
 
     const now = moment();
     let other;
